@@ -1,0 +1,34 @@
+/* body{
+    background: #080b10;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+} */
+.graph_main{
+    z-index: 999;
+    padding:30px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.graph_container{
+    z-index: 999;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff04;
+    border:#f6f6f929 0.1px solid;
+    border-radius: 8px;
+}
+#graph{
+    
+    width: 20vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

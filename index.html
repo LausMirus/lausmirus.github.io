@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/font.css">
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/github.css">
+    <link rel="stylesheet" href="/css/graph.css">
 </head>
 
 <body>
@@ -37,9 +38,9 @@
 
         <div class="toggle_home" style="display: block;">
             <p class="mobile_error">Oops !!! , this web is not made for small screen user</p>
-            <p class="intro">
+            <!-- <p class="intro">
                 welcome hooman
-            </p>
+            </p> -->
         </div>
 
 
@@ -91,9 +92,18 @@
             <button class="link_manipulate" onclick="show_more()">More</button>
 
         </div>
-
+        
+        <!--######################### obsidian like graph #####################################-->
+        <div class="graph_main">
+            <div class="graph_container">
+                <div class="graph" id="graph"></div>
+            </div>
+        </div>
 
     </div>
+
+
+
 
     <footer>
         <div class="reyna_voiceline">
@@ -106,6 +116,8 @@
             <p class="name">- Laus Mirus -</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+    <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
         integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -114,6 +126,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script/timer.js"></script>
     <script src="script/home.js"></script>
+    <script src="script/graph.js"></script>
     <script src="script/about.js"></script>
 </body>
 
