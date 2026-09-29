@@ -28,6 +28,7 @@ function show_home() {
     const projects = document.querySelector('.toggle_projects');
     const more = document.querySelector('.toggle_more');
     const more_about = document.querySelector('.more_about');
+    const graph = document.querySelector('.graph_main');
 
     if (home) {
 
@@ -41,8 +42,11 @@ function show_home() {
         const toggle6 = window.getComputedStyle(projects).display;
         const toggle7 = window.getComputedStyle(more).display;
         const toggle8 = window.getComputedStyle(more_about).display;
+        const toggle9 = window.getComputedStyle(graph).display;
 
-        console.log(toggle1, toggle2, toggle3, toggle4, toggle5, toggle6, toggle7, toggle8);
+        
+
+        console.log(toggle1, toggle2, toggle3, toggle4, toggle5, toggle6, toggle7, toggle8,toggle9);
 
 
         if (toggle1 === "block") {
@@ -54,6 +58,7 @@ function show_home() {
             home.style.display = 'flex';
             github.style.display = 'none';
             more_about.style.display = 'none';
+            graph.style.display = 'contents';
             console.log(home);
         }
         else {
@@ -65,6 +70,7 @@ function show_home() {
             home.style.display = 'flex';
             github.style.display = 'none';
             more_about.style.display = 'none';
+            graph.style.display = 'contents';
         }
     }
 
@@ -82,6 +88,7 @@ function show_about() {
     const projects = document.querySelector('.toggle_projects');
     const more = document.querySelector('.toggle_more');
     const more_about = document.querySelector('.more_about');
+    const graph = document.querySelector('.graph_main');
 
     if (about) {
 
@@ -95,6 +102,7 @@ function show_about() {
         const toggle6 = window.getComputedStyle(projects).display;
         const toggle7 = window.getComputedStyle(more).display;
         const toggle8 = window.getComputedStyle(more_about).display;
+        const toggle9 = window.getComputedStyle(graph).display;
 
         console.log(toggle1, toggle2, toggle3);
 
@@ -107,6 +115,7 @@ function show_about() {
             home.style.display = 'none';
             github.style.display = 'none';
             more_about.style.display = 'flex';
+            graph.style.display = 'none';
             console.log(home);
         }
         else {
@@ -118,6 +127,7 @@ function show_about() {
             home.style.display = 'none';
             github.style.display = 'none';
             more_about.style.display = 'flex';
+            graph.style.display = 'none';
         }
     }
 
@@ -133,6 +143,7 @@ function show_github() {
     const projects = document.querySelector('.toggle_projects');
     const more = document.querySelector('.toggle_more');
     const more_about = document.querySelector('.more_about');
+    const graph = document.querySelector('.graph_main');
 
     if (github) {
 
@@ -146,6 +157,7 @@ function show_github() {
         const toggle6 = window.getComputedStyle(projects).display;
         const toggle7 = window.getComputedStyle(more).display;
         const toggle8 = window.getComputedStyle(more_about).display;
+        const toggle9 = window.getComputedStyle(graph).display;
         console.log(toggle1, toggle2, toggle3);
 
         if (toggle3 === "none") {
@@ -157,6 +169,7 @@ function show_github() {
             home.style.display = 'none';
             github.style.display = 'block';
             more_about.style.display = 'none';
+            graph.style.display = 'none';
             console.log(home);
         }
         else {
@@ -168,6 +181,7 @@ function show_github() {
             home.style.display = 'none';
             github.style.display = 'block';
             more_about.style.display = 'none';
+            graph.style.display = 'none';
         }
     }
 
